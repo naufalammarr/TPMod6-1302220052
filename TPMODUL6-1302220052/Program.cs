@@ -5,7 +5,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        SayaTubeVideo newVideo01 = new SayaTubeVideo("Tutorial Design By Contract – RAFIF PURNOMO");
+        SayaTubeVideo newVideo01 = new SayaTubeVideo("Tutorial Design By Contract – NAUFAL AMMAR ZAIDAN");
         newVideo01.IncreasePlayCount(1);
         newVideo01.PrintVideoDetails();
 
