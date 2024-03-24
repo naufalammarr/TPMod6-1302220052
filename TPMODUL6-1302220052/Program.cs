@@ -1,59 +1,22 @@
-﻿namespace tpmodul6_1302220003
+﻿
+using TPMODUL6_1302220052;
+
+internal class Program
 {
-    internal class SayaTubeVideo
+    private static void Main(string[] args)
     {
-        int ID;
-        string title;
-        int playCount;
+        SayaTubeVideo newVideo01 = new SayaTubeVideo("Tutorial Design By Contract – RAFIF PURNOMO");
+        newVideo01.IncreasePlayCount(1);
+        newVideo01.PrintVideoDetails();
 
-        public SayaTubeVideo(string title)
+        Console.WriteLine(" ");
+        // CEK KONDISI
+        SayaTubeVideo newVideo02 = new SayaTubeVideo("");
+        newVideo02.IncreasePlayCount(10000009);
+        for (int i = 0; i <= 5; i++)
         {
-            if (title != null && title.Length < 100)
-            {
-                this.title = title;
-            }
-            else
-            {
-                throw new ArgumentException("TITLE TIDAK BOLEH KOSONG DAN PANJANG KURANG DARI 100 KATA");
-            }
-            this.ID = generateRandomID();
-            this.playCount = 0;
+            newVideo02.IncreasePlayCount(10000009);
         }
-
-        private int generateRandomID()
-        {
-            Random random = new Random();
-            return random.Next(00000, 99999);
-        }
-
-        public void IncreasePlayCount(int newPlayCount)
-        {
-            try
-            {
-                checked
-                {
-                    if (newPlayCount >= 0 && newPlayCount <= 10000000)
-                    {
-                        playCount += newPlayCount;
-                    }
-                    else
-                    {
-                        throw new ArgumentOutOfRangeException();
-                    }
-                }
-            }
-            catch (Exception ArgumentOutOfRangeException)
-            {
-                Console.WriteLine(ArgumentOutOfRangeException.Message);
-            }
-        }
-
-        public void PrintVideoDetails()
-        {
-            Console.WriteLine("Video ID: " + this.ID);
-            Console.WriteLine("Video Title: " + this.title);
-            Console.WriteLine("Play Count: " + this.playCount);
-        }
-
+        newVideo02.PrintVideoDetails();
     }
 }
