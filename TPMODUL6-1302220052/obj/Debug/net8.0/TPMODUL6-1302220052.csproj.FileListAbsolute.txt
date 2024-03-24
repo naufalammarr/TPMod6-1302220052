@@ -1,0 +1,4 @@
+C:\Users\naufalammar\Documents\SEMESTER 4\KPL\TPMODUL6-1302220052\TPMODUL6-1302220052\obj\Debug\net8.0\TPMODUL6-1302220052.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\naufalammar\Documents\SEMESTER 4\KPL\TPMODUL6-1302220052\TPMODUL6-1302220052\obj\Debug\net8.0\TPMODUL6-1302220052.AssemblyInfoInputs.cache
+C:\Users\naufalammar\Documents\SEMESTER 4\KPL\TPMODUL6-1302220052\TPMODUL6-1302220052\obj\Debug\net8.0\TPMODUL6-1302220052.AssemblyInfo.cs
+C:\Users\naufalammar\Documents\SEMESTER 4\KPL\TPMODUL6-1302220052\TPMODUL6-1302220052\obj\Debug\net8.0\TPMODUL6-1302220052.csproj.CoreCompileInputs.cache
